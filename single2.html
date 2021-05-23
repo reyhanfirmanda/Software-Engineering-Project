@@ -7,7 +7,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 <!DOCTYPE HTML>
 <html>
 <head>
-<title>Contact Us | Glenn Shaw</title>
+<title>Free Snow Bootstrap Website Template | Single :: w3layouts</title>
 <link href="css/bootstrap.css" rel='stylesheet' type='text/css' />
 <link href="css/style.css" rel='stylesheet' type='text/css' />
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
@@ -46,7 +46,32 @@ License URL: http://creativecommons.org/licenses/by/3.0/
             });
         });
      </script>
- </head>
+     <!----details-product-slider--->
+				<!-- Include the Etalage files -->
+					<link rel="stylesheet" href="css/etalage.css">
+					<script src="js/jquery.etalage.min.js"></script>
+				<!-- Include the Etalage files -->
+				<script>
+						jQuery(document).ready(function($){
+			
+							$('#etalage').etalage({
+								thumb_image_width: 300,
+								thumb_image_height: 400,
+								
+								show_hint: true,
+								click_callback: function(image_anchor, instance_id){
+									alert('Callback example:\nYou clicked on an image with the anchor: "'+image_anchor+'"\n(in Etalage instance: "'+instance_id+'")');
+								}
+							});
+							// This is for the dropdown list example:
+							$('.dropdownlist').change(function(){
+								etalage_show( $(this).find('option:selected').attr('class') );
+							});
+
+					});
+				</script>
+				<!----//details-product-slider--->	
+</head>
 <body>
 	<div class="header">
 		<div class="container">
@@ -59,15 +84,15 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 					 <div class="menu">
 						  <a class="toggleMenu" href="#"><img src="images/nav.png" alt="" /></a>
 						    <ul class="nav" id="nav">
-						    	<li><a href="shop.html">Shop</a></li>
+						    	<li class="current"><a href="shop.html">Shop</a></li>
 						    	<li><a href="team.html">Team</a></li>
 						    	<!-- <li><a href="shop.html">Events</a></li> -->
-						    	<!-- <li><a href="experiance.html">Experiance</a></li>
-						    	<li><a href="shop.html">Company</a></li> -->
-								<li class="current"><a href="contact.html">Contact</a></li>								
+						    	<li><a href="experiance.html">Experiance</a></li>
+						    	<li><a href="shop.html">Company</a></li>
+								<li><a href="contact.html">Contact</a></li>								
 								<div class="clear"></div>
 							</ul>
-						<script type="text/javascript" src="js/responsive-nav.js"></script>
+							<script type="text/javascript" src="js/responsive-nav.js"></script>
 				    </div>							
 	    		    <div class="clear"></div>
 	    	    </div>
@@ -118,42 +143,143 @@ License URL: http://creativecommons.org/licenses/by/3.0/
       <div class="shop_top">
 		<div class="container">
 			<div class="row">
-				<div class="col-md-7">
-				  <div class="map">
-					<iframe width="100%" height="350" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.co.in/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=Lighthouse+Point,+FL,+United+States&amp;aq=4&amp;oq=light&amp;sll=26.275636,-80.087265&amp;sspn=0.04941,0.104628&amp;ie=UTF8&amp;hq=&amp;hnear=Lighthouse+Point,+Broward,+Florida,+United+States&amp;t=m&amp;z=14&amp;ll=26.275636,-80.087265&amp;output=embed"></iframe><br><small><a href="https://maps.google.co.in/maps?f=q&amp;source=embed&amp;hl=en&amp;geocode=&amp;q=Lighthouse+Point,+FL,+United+States&amp;aq=4&amp;oq=light&amp;sll=26.275636,-80.087265&amp;sspn=0.04941,0.104628&amp;ie=UTF8&amp;hq=&amp;hnear=Lighthouse+Point,+Broward,+Florida,+United+States&amp;t=m&amp;z=14&amp;ll=26.275636,-80.087265" style="color:#666;text-align:left;font-size:12px"></a></small>
-				  </div>
+				<div class="col-md-9 single_left">
+				   <div class="single_image">
+					     <ul id="etalage">
+							<li>
+								<a href="optionallink.html">
+									<img class="etalage_thumb_image" src="images/clothing1-1.webp" />
+									<img class="etalage_source_image" src="images/clothing1-1.webp" />
+								</a>
+							</li>
+							<li>
+								<img class="etalage_thumb_image" src="images/clothing1-2.webp" />
+								<img class="etalage_source_image" src="images/clothing1-2.webp" />
+							</li>
+							<li>
+								<img class="etalage_thumb_image" src="images/clothing1-3.webp" />
+								<img class="etalage_source_image" src="images/clothing1-3.webp" />
+							</li>
+						</ul>
+					    </div>
+				        <!-- end product_slider -->
+				        <div class="single_right">
+				        	<h3>Light Blue Denim Jacket </h3>
+				        	<p class="m_10">Light blue wash denim jacket with pockets, a classic collar and button fastening.</p>
+				        	<ul class="options">
+								<h4 class="m_12">Select a Size</h4>
+								<li><a href="#">S</a></li>
+								<li><a href="#">M</a></li>
+								<li><a href="#">L</a></li>
+								<li><a href="#">XL</a></li>
+								<li><a href="#">XXL</a></li>
+								<li><a href="#">XXXL</a></li>
+							</ul>
+				        	<!-- <ul class="product-colors">
+								<h3>available Colors</h3>
+								<li><a class="color1" href="#"><span> </span></a></li>
+								<li><a class="color2" href="#"><span> </span></a></li>
+								<li><a class="color3" href="#"><span> </span></a></li>
+								<li><a class="color4" href="#"><span> </span></a></li>
+								<li><a class="color5" href="#"><span> </span></a></li>
+								<li><a class="color6" href="#"><span> </span></a></li>
+								<div class="clear"> </div>
+							</ul> -->
+							<div class="btn_form">
+							   <form>
+								 <input type="submit" value="buy now" title="">
+							  </form>
+							</div>
+							<!-- <ul class="add-to-links">
+    			              <li><img src="images/wish.png" alt=""><a href="#">Add to wishlist</a></li>
+    			            </ul> -->
+							<!-- <div class="social_buttons">
+								<h4>95 Items</h4>
+								<button type="button" class="btn1 btn1-default1 btn1-twitter" onclick="">
+					              <i class="icon-twitter"></i> Tweet
+					            </button>
+					            <button type="button" class="btn1 btn1-default1 btn1-facebook" onclick="">
+					              <i class="icon-facebook"></i> Share
+					            </button>
+					             <button type="button" class="btn1 btn1-default1 btn1-google" onclick="">
+					              <i class="icon-google"></i> Google+
+					            </button>
+					            <button type="button" class="btn1 btn1-default1 btn1-pinterest" onclick="">
+					              <i class="icon-pinterest"></i> Pinterest
+					            </button>
+					        </div> -->
+				        </div>
+				        <div class="clear"> </div>
 				</div>
-				<div class="col-md-5">
-					<p class="m_8">Hey Seeker! Fill out the form below and we will get back to you ASAP. During normal times you can expect a response within 24-48 hours.</p>
-					<div class="address">
-				                <p>500 Lorem Ipsum Dolor Sit,</p>
-						   		<p>22-56-2-9 Sit Amet, Lorem,</p>
-						   		<p>USA</p>
-				   		<p>Phone:(00) 222 666 444</p>
-				   		<p>Fax: (000) 000 00 00 0</p>
-				 	 	<p>Email: <span>support[at]snow.com</span></p>
-				   		<p>Follow on: <span>Facebook</span>, <span>Twitter</span></p>
+				<div class="col-md-3">
+				  <div class="box-info-product">
+					<p class="price2">IDR 599.000</p>
+					       <ul class="prosuct-qty">
+								<span>Quantity:</span>
+								<select>
+									<option>1</option>
+									<option>2</option>
+									<option>3</option>
+									<option>4</option>
+									<option>5</option>
+									<option>6</option>
+								</select>
+							</ul>
+							<button type="submit" name="Submit" class="exclusive">
+							   <span>Add to cart</span>
+							</button>
 				   </div>
-				</div>
-			</div>
+			   </div>
+			</div>		
+			<!-- <div class="desc">
+			   	<h4>Description</h4>
+			   	<p>Light blue wash denim jacket with pockets, a classic collar and button fastening.</p>
+			</div> -->
 			<div class="row">
-				<div class="col-md-12 contact">
-				  <form method="post" action="contact-post.html">
-					<div class="to">
-                     	<input type="text" class="text" value="Name" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Name';}">
-					 	<input type="text" class="text" value="Email" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Email';}">
-					 	<input type="text" class="text" value="Subject" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Subject';}">
-					</div>
-					<div class="text">
-	                   <textarea value="Message:" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Message';}">Message:</textarea>
-	                   <div class="form-submit">
-			           <input name="submit" type="submit" id="submit" value="Submit"><br>
-			           </div>
-	                </div>
-	                <div class="clear"></div>
-                   </form>
-			     </div>
-		    </div>
+				<h4 class="m_11">Related Products in the same Category</h4>
+				<div class="col-md-4 product1">
+					<img src="images/s1.jpg" class="img-responsive" alt=""/> 
+					<div class="shop_desc"><a href="single.html">
+						</a><h3><a href="single.html"></a><a href="#">aliquam volutp</a></h3>
+						<p>Lorem ipsum consectetuer adipiscing </p>
+						<span class="reducedfrom">$66.00</span>
+						<span class="actual">$12.00</span><br>
+						<ul class="buttons">
+							<li class="cart"><a href="#">Add To Cart</a></li>
+							<li class="shop_btn"><a href="#">Read More</a></li>
+							<div class="clear"> </div>
+					    </ul>
+				    </div>
+				</div>
+				<div class="col-md-4 product1">
+					<img src="images/s2.jpg" class="img-responsive" alt=""/> 
+					<div class="shop_desc"><a href="single.html">
+						</a><h3><a href="single.html"></a><a href="#">aliquam volutp</a></h3>
+						<p>Lorem ipsum consectetuer adipiscing </p>
+						<span class="reducedfrom">$66.00</span>
+						<span class="actual">$12.00</span><br>
+						<ul class="buttons">
+							<li class="cart"><a href="#">Add To Cart</a></li>
+							<li class="shop_btn"><a href="#">Read More</a></li>
+							<div class="clear"> </div>
+					    </ul>
+				    </div>
+				</div>
+				<div class="col-md-4">
+					<img src="images/s3.jpg" class="img-responsive" alt=""/> 
+					<div class="shop_desc"><a href="single.html">
+						</a><h3><a href="single.html"></a><a href="#">aliquam volutp</a></h3>
+						<p>Lorem ipsum consectetuer adipiscing </p>
+						<span class="reducedfrom">$66.00</span>
+						<span class="actual">$12.00</span><br>
+						<ul class="buttons">
+							<li class="cart"><a href="#">Add To Cart</a></li>
+							<li class="shop_btn"><a href="#">Read More</a></li>
+							<div class="clear"> </div>
+					    </ul>
+				    </div>
+				</div>
+			</div>	
 	     </div>
 	   </div>
 	  </div>

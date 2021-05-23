@@ -363,7 +363,7 @@ li.list_desc h4 a:hover{
 .icon1 .profile_img {
 	margin-top: 3px;
 }
-.sub-icon1 ul li h3{
+.11 ul li h3{
 	text-align: center;
 	font-size: 18px;
 	color: #555;
@@ -464,7 +464,7 @@ li.list_desc h4 a:hover{
 }
 /*--main--*/
 .content-top{
-	padding:10% 0;
+	padding:5.5% 0;
 }
 .content-top h2{
 	color: #000;
@@ -508,6 +508,8 @@ li.list_desc h4 a:hover{
 .nbs-flexisel-inner {
 	overflow: hidden;
 	margin: 0 auto;
+	margin-left: 300px;
+	margin-right: 300px;
 }
 .nbs-flexisel-item {
 	float: left;
@@ -535,16 +537,17 @@ li.list_desc h4 a:hover{
 	z-index: 100;
 }
 .nbs-flexisel-nav-left {
-	left: 205px;
+	left: 50px;
 	background: url(../images/img-sprite.png) no-repeat -110px 1px;
 }
 .nbs-flexisel-nav-right {
-	right:205px;
+	right:50px;
 	background: url(../images/img-sprite.png) no-repeat -254px 1px;
 }
 .content-bottom{
 	width:100%;
-	background: url(../images/bg_image.jpg)no-repeat center top;
+	/* background: url(../images/bg_image.jpg)no-repeat center top; */
+	background-color: #FFE5D9;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
@@ -552,24 +555,26 @@ li.list_desc h4 a:hover{
 	background-position: center;
 	background-size: 100% 100%;
 	height:100%;
-	padding:15% 0;
+	padding:4% 0;
 }
 .content_bottom-text h3{
-	color: #FFF;
+	color: black;
 	font-size: 3em;
 	font-weight: 800;
 	text-transform: uppercase;
 	line-height: 1.2em;
-	margin: 2% 0 10%;
+	margin: 2% 0 4%;
+	
 }
 p.m_1{
-	color: #FFF;
-	font-size: 0.85em;
+	color: black;
+	font-size: 1em;
 	line-height: 2.2em;
-	margin-bottom:6%;
+	margin-bottom:1%;
+	width: 180%;
 }
 p.m_2{
-	color: #FFF;
+	color: black;
 	font-size: 0.85em;
 	line-height: 2.2em;
 }
@@ -582,7 +587,7 @@ h3.m_3{
 	font-weight: 800;
 	text-align: center;
 	text-transform: uppercase;
-	margin-bottom:2%;
+	margin-bottom:1%;
 }
 .close_but{
 	text-align:center;
@@ -1577,7 +1582,7 @@ p.cart {
 	border-right: 1px solid #EEE;
 	padding-right: 5%;
 }
-h4.title {
+h3.title {
 	color:#000;
 	margin-bottom: 0.5em;
 	font-size: 1em;
