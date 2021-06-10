@@ -133,17 +133,27 @@ else {
         <br><br><br><br>
     <!-- <h1>Products</h1><br> -->
 
-    <div id="products" class="row list-group">
+    <div id="products" class="row shop_box-top">
         <?php
         //get rows query
         $query = $db->query("SELECT * FROM products ORDER BY id DESC LIMIT 10");
         if($query->num_rows > 0){
             while($row = $query->fetch_assoc()){
         ?>
-        <div class="item col-lg-4 ">
-            <div class="thumbnail">
-                <div class="caption">
-                    <h4 class="list-group-item-heading"><?php echo $row["name"]; ?></h4>
+        <div class="col-md-3 shop_box ">
+            
+				
+			<img src="images/<?= $row['images']; ?>" class="img-responsive">
+			<div class="shop_desc">
+				<h3><?php echo $row["name"]; ?></h3>
+				<span class="actual"><?php echo 'IDR '.$row["price"]; ?></span>
+				<ul class="buttons">
+							<li class="cart"><a class="cart" href="cartAction.php?action=addToCart&id=<?php echo $row["id"]; ?>">Add to cart</a></li>
+							<li class="shop_btn"><a href="#">Read More</a></li>
+							<div class="clear"> </div>
+				</ul>
+			</div>	
+                    <!-- <h4 class="list-group-item-heading"><?php echo $row["name"]; ?></h4>
                     <p class="list-group-item-text" style="padding-bottom:10px"><?php echo $row["description"]; ?></p>
                     <div class="row">
                         <div class="col-md-6">
@@ -152,9 +162,8 @@ else {
                         <div class="col-md-6">
                             <a class="btn btn-success" href="cartAction.php?action=addToCart&id=<?php echo $row["id"]; ?>">Add to cart</a>
                         </div>
-                    </div>
-                </div>
-            </div>
+                    </div> -->
+                
         </div>
         <?php } }else{ ?>
         <p>Product(s) not found.....</p>

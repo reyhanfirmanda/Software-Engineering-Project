@@ -1042,6 +1042,7 @@ li.youtube a span {
 }
 .shop_box{
 	position:relative;
+	margin-bottom: 1em;
 }
 .shop_desc{
 	border:1px solid #E0E0E0;

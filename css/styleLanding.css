@@ -18,11 +18,12 @@ a {
   transition: .5s ease;
 }
 a:hover {
-  color: #179b77;
+  color: #E25050;
 }
 
 .form {
-  background: rgba(19, 35, 47, 0.9); 
+  /* background: rgba(19, 35, 47, 0.9);  */
+  background-color: black;
   padding: 40px;
   max-width: 600px;
   border-radius: 4px;
@@ -57,7 +58,7 @@ a:hover {
   transition: .5s ease;
 }
 .tab-group li a:hover {
-  background: #179b77;
+  background: #E25050;
   color: #ffffff;
 }
 .tab-group .active a {
@@ -84,7 +85,7 @@ h2 {
 }
 
 span {
-    color: #1ab188;
+    color: #E25050;
     font-weight: bold;
 }
 
